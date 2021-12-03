@@ -1,4 +1,4 @@
-import { countBy, groupBy } from 'lodash'
+import { countBy } from 'lodash'
 import { performance } from 'perf_hooks'
 
 export class Program {
@@ -14,8 +14,8 @@ export class Program {
   private calcResult (input: string): number {
     const values = this.parseInput(input)
 
-    let o2 = this.findRating(values, false)
-    let co2 = this.findRating(values, true)
+    const o2 = this.findRating(values, false)
+    const co2 = this.findRating(values, true)
 
     return parseInt(o2, 2) * parseInt(co2, 2)
   }

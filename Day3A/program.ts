@@ -1,4 +1,4 @@
-import { countBy, groupBy } from 'lodash'
+import { countBy } from 'lodash'
 import { performance } from 'perf_hooks'
 
 export class Program {
